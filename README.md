@@ -57,8 +57,8 @@ streamlit run app.py
 | XGBoost (Tuned) | 0.85 | 0.83 | 0.98 | 0.90 |
 | ANN | 0.85 | 0.83 | 0.97 | 0.90 |
 
-> ✅ Best Model: **XGBoost (Tuned)** with ~85% Accuracy and F1 of 0.8922
-> 📝 Fill in ANN metrics after training.
+* ✅ Best Model: **XGBoost (Tuned)** with ~85% Accuracy and F1 of 0.8922
+* 📝 Fill in ANN metrics after training.
 
 ## 🔧 Pipeline Architecture
 
@@ -66,7 +66,6 @@ streamlit run app.py
 ColumnTransformer (preprocessor)
 ├── num_pipeline  → SimpleImputer(median) → StandardScaler
 └── cat_pipeline  → SimpleImputer(most_frequent) → OneHotEncoder(drop='first')
-
 ```
 
 ## 🧠 ANN Architecture
