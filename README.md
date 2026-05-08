@@ -4,7 +4,7 @@ An end-to-end Machine Learning project to predict loan approval
 using multiple classification algorithms with hyperparameter tuning.
 
 ## 🚀 Live Demo
-- 🎯 Streamlit: 
+- 🎯 Streamlit: https://loan-predictions-ml.streamlit.app/
 
 ## 🔍 Project Overview
 
