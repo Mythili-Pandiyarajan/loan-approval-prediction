@@ -67,15 +67,13 @@ ColumnTransformer (preprocessor)
 ├── num_pipeline  → SimpleImputer(median) → StandardScaler
 └── cat_pipeline  → SimpleImputer(most_frequent) → OneHotEncoder(drop='first')
 
-
 ## 🧠 ANN Architecture
 
-```
-Input Layer     → [11 features after encoding]
-Dense(64)       → ReLU → Dropout(0.3)
-Dense(32)       → ReLU → Dropout(0.2)
-Output Layer    → Dense(1) → Sigmoid
-Optimizer: Adam | Loss: Binary Crossentropy
+* Input Layer     → [11 features after encoding]
+* Dense(64)       → ReLU → Dropout(0.3)
+* Dense(32)       → ReLU → Dropout(0.2)
+* Output Layer    → Dense(1) → Sigmoid
+* Optimizer: Adam | Loss: Binary Crossentropy
 
 ## 📌 Dataset
 
