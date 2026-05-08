@@ -6,7 +6,7 @@ import os
 
 # ─── Page Config ────────────────────────────────────────────────────────────
 st.set_page_config(
-    page_title="LoanSense by Mythili",
+    page_title="LoanSense — AI Approval Engine",
     page_icon="🏦",
     layout="wide",
     initial_sidebar_state="collapsed",
@@ -226,19 +226,7 @@ def compute_emi(loan_amount, loan_term_months):
 
 
 # ─── Hero ────────────────────────────────────────────────────────────────────
-st.markdown("""
-<svg viewBox="0 0 520 90" xmlns="http://www.w3.org/2000/svg" style="width:520px;max-width:100%;display:block;margin-bottom:0.2rem;">
-  <defs>
-    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%"   stop-color="#60a5fa"/>
-      <stop offset="50%"  stop-color="#a78bfa"/>
-      <stop offset="100%" stop-color="#f472b6"/>
-    </linearGradient>
-  </defs>
-  <text x="0" y="72" font-family="Syne, sans-serif" font-size="80" font-weight="800"
-        letter-spacing="-2" fill="url(#titleGrad)">LoanSense</text>
-</svg>
-""", unsafe_allow_html=True)
+st.markdown('<div class="hero-title">LoanSense</div>', unsafe_allow_html=True)
 st.markdown('<div class="hero-sub">AI-Powered Loan Approval Engine · EMI Affordability · Debt-to-Income Risk Validation</div>', unsafe_allow_html=True)
 
 col_badge1, col_badge2, col_badge3, _ = st.columns([1, 1, 1, 3])
