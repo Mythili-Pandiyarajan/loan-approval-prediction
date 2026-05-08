@@ -66,8 +66,10 @@ streamlit run app.py
 ColumnTransformer (preprocessor)
 ├── num_pipeline  → SimpleImputer(median) → StandardScaler
 └── cat_pipeline  → SimpleImputer(most_frequent) → OneHotEncoder(drop='first')
+
+## 🧠 ANN Architecture
+
 ```
-🧠 ANN Architecture
 Input Layer     → [11 features after encoding]
 Dense(64)       → ReLU → Dropout(0.3)
 Dense(32)       → ReLU → Dropout(0.2)
