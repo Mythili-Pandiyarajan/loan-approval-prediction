@@ -8,7 +8,7 @@ using multiple classification algorithms with hyperparameter tuning.
 
 ## 🔍 Project Overview
 
-This project compares 7 ML models (baseline + tuned):
+This project compares 8 ML models (baseline + tuned):
 * Logistic Regression
 * Decision Tree Classifier (Baseline + Tuned)
 * Random Forest Classifier (Baseline + Tuned)
