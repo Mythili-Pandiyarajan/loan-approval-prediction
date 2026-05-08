@@ -29,7 +29,7 @@ with st.form("loan_form"):
     with col1:
         gender = st.selectbox("Gender", ["Male", "Female"])
         married = st.selectbox("Married", ["Yes", "No"])
-        dependents = st.selectbox("Dependents", ["0", "1", "2", "3+"])
+        dependents = st.selectbox("Dependents", ["0", "1", "2", "3"])
         education = st.selectbox("Education", ["Graduate", "Not Graduate"])
         self_employed = st.selectbox("Self Employed", ["No", "Yes"])
         property_area = st.selectbox("Property Area", ["Urban", "Semiurban", "Rural"])
