@@ -487,5 +487,5 @@ st.markdown("""
 <div class="disclaimer">
     LoanSense is a demonstration tool powered by a machine learning model trained on historical data.<br>
     Predictions are for illustrative purposes only and do not constitute financial advice.<br>
-   © 2025 LoanSense · Built by Mythili · Streamlit & XGBoost</div>
+   © 2026 LoanSense · Built by Mythili · Streamlit & XGBoost</div>
 """, unsafe_allow_html=True)
