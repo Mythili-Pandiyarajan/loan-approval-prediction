@@ -5,6 +5,7 @@ using multiple classification algorithms with hyperparameter tuning.
 
 ## 🚀 Live Demo
 - 🎯 Streamlit: https://loan-predictions-ml.streamlit.app/
+- 🤗 HuggingFace: https://huggingface.co/spaces/Mythili-Pandiyarajan/Loan_Approval_Predictor_AI
 
 ## 🔍 Project Overview
 
