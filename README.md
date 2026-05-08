@@ -67,6 +67,7 @@ ColumnTransformer (preprocessor)
 ├── num_pipeline  → SimpleImputer(median) → StandardScaler
 └── cat_pipeline  → SimpleImputer(most_frequent) → OneHotEncoder(drop='first')
 
+
 ## 🧠 ANN Architecture
 
 ```
