@@ -13,6 +13,7 @@ This project compares 7 ML models (baseline + tuned):
 * Decision Tree Classifier (Baseline + Tuned)
 * Random Forest Classifier (Baseline + Tuned)
 * XGBoost Classifier (Baseline + Tuned)
+* Artificial Neural Network(ANN)
 
 ## 📁 Project Structure
 
@@ -29,6 +30,7 @@ This project compares 7 ML models (baseline + tuned):
 * Pandas, NumPy
 * Scikit-learn
 * XGBoost
+* TensorFlow / Keras
 * Streamlit
 * Matplotlib, Seaborn
 * ydata-profiling
@@ -46,15 +48,17 @@ streamlit run app.py
 
 | Model | Accuracy | Precision | Recall | F1 Score |
 |-------|----------|-----------|--------|----------|
-| Logistic Regression | 0.7967 | 0.8043 | 0.9245 | 0.8602 |
-| Decision Tree (Base) | 0.7642 | 0.8065 | 0.8679 | 0.8361 |
-| Decision Tree (Tuned) | 0.7967 | 0.8246 | 0.8868 | 0.8545 |
-| Random Forest (Base) | 0.8130 | 0.8333 | 0.8868 | 0.8593 |
-| Random Forest (Tuned) | 0.8293 | 0.8475 | 0.9057 | 0.8756 |
-| XGBoost (Base) | 0.8130 | 0.8475 | 0.8868 | 0.8667 |
-| XGBoost (Tuned) | 0.8537 | 0.8621 | 0.9245 | 0.8922 |
+| Logistic Regression | 0.82 | 0.86 | 0.88 | 0.87 |
+| Decision Tree (Base) | 0.73 | 0.82 | 0.78 | 0.80 |
+| Decision Tree (Tuned) | 0.85 | 0.83 | 0.98 | 0.90 |
+| Random Forest (Base) | 0.82 | 0.84 | 0.92 | 0.88 |
+| Random Forest (Tuned) | 0.85 | 0.83 | 0.98 | 0.90 |
+| XGBoost (Base) | 0.80 | 0.85 | 0.87 | 0.86 |
+| XGBoost (Tuned) | 0.85 | 0.83 | 0.98 | 0.90 |
+| ANN | 0.85 | 0.83 | 0.97 | 0.90 |
 
 > ✅ Best Model: **XGBoost (Tuned)** with ~85% Accuracy and F1 of 0.8922
+> 📝 Fill in ANN metrics after training.
 
 ## 🔧 Pipeline Architecture
 
@@ -63,6 +67,12 @@ ColumnTransformer (preprocessor)
 ├── num_pipeline  → SimpleImputer(median) → StandardScaler
 └── cat_pipeline  → SimpleImputer(most_frequent) → OneHotEncoder(drop='first')
 ```
+🧠 ANN Architecture
+Input Layer     → [11 features after encoding]
+Dense(64)       → ReLU → Dropout(0.3)
+Dense(32)       → ReLU → Dropout(0.2)
+Output Layer    → Dense(1) → Sigmoid
+Optimizer: Adam | Loss: Binary Crossentropy
 
 ## 📌 Dataset
 
